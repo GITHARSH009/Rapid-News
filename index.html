@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapid News</title>
+    <link rel="stylesheet" href="./style.css" >
+</head>
+<body>
+    <nav class="main">
+        <div class="header">
+            <a href="#" alt="logo" class="img">
+            <img src="./News.png" alt="logo" style="height: 80px">
+            </a>
+            <div class="nav-links">
+             <ul style="display: flex">
+                <li class="hover-link" onclick="fetchnews('Finance')">Finance</li>
+                <li class="hover-link"  onclick="fetchnews('Politics')">Politics</li>
+                <li class="hover-link"  onclick="fetchnews('Technology')">Technology</li>
+             </ul>
+            </div>
+            <div class="search-bar">
+            <input type="text" placeholder="Search here" class="search" id="search">
+            <button type="submit" class="searchbtn" id="searchbtn">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="card-container" id="card-container">
+        </div>
+    </main>
+    <template id="template-cards">
+        <div class="cards">
+            <div class="image">
+                <img src="./News.png" alt="logo" class="imgi" id="imgi">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 id="news-source">This the new iphone</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor</p>
+            </div>
+        </div>
+    </template>
+    <script src="./script.js"></script>
+</body>
+</html>
